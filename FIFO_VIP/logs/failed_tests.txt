@@ -1,0 +1,1084 @@
+./fifo_sim2_167_188.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_167_275.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_167_7.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_32_188.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_32_275.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_9_275.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2_9_7.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim2.log: ERROR: Fifo empty(RTL) Not Equal empty Flag                  71
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               53951
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55731
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55771
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55791
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55811
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55851
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55871
+./fifo_sim8_167_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               56071
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               53951
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55731
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55771
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55791
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55811
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55851
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               55871
+./fifo_sim8_9_7.log: ERROR: Fifo Full(RTL) Not Equal Full Flag               56071
+./fifo_sim8_167_7.log: ERROR: Fifo Full Not asserted                55730
+./fifo_sim8_167_7.log: ERROR: Fifo Full Not asserted                55790
+./fifo_sim8_167_7.log: ERROR: Fifo Full Not asserted                55850
+./fifo_sim8_167_7.log: ERROR: Fifo Full Not asserted                55970
+./fifo_sim8_9_7.log: ERROR: Fifo Full Not asserted                55730
+./fifo_sim8_9_7.log: ERROR: Fifo Full Not asserted                55790
+./fifo_sim8_9_7.log: ERROR: Fifo Full Not asserted                55850
+./fifo_sim8_9_7.log: ERROR: Fifo Full Not asserted                55970
+
+
+==> ./fifo_sim10_167_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 000000000000000000000000000000000011a61a6d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 0000000000000000000000000000000000765dcd2a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d2a60aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000006d2a60aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 00000000000000000000000000000000006d2a60aa
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   1 
+ 																 Txn Failed    761 
+  																 Txn Dropped   0 
+
+==> ./fifo_sim10_167_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002a9a4152 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 0000000000000000000000000000000000xxxxxxxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   0 
+ 																 Txn Failed    849 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim10_167_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002a9a4152 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 0000000000000000000000000000000000xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 0000000000000000000000000000000000xxxxxxxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   0 
+ 																 Txn Failed    581 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+
+==> ./fifo_sim10_32_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 11a61a6d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 765dcd2a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received 6d2a60aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received 6d2a60aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received 6d2a60aa
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   1 
+ 																 Txn Failed    761 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+
+==> ./fifo_sim10_32_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2a9a4152 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received xxxxxxxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   0 
+ 																 Txn Failed    849 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ###############################################################
+
+==> ./fifo_sim10_9_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 152 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received xxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   0 
+ 																 Txn Failed    849 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim10_9_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 152 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received xxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received xxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   0 
+ 																 Txn Failed    581 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim10.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37710: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2a9a4152 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37770: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37830: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37870: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37890: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received xxxxxxxx
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37930: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received xxxxxxxx
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   0 
+ 																 Txn Failed    605 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_167_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 00000000000000000000000000000000002a9a4152
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   757 
+ 																 Txn Failed    5 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_167_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_167_7.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   509 
+ 																 Txn Failed    72 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_32_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received 2a9a4152
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   757 
+ 																 Txn Failed    5 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_32_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_9_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12e received 12e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3_9_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12e received 12e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim3.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   586 
+ 																 Txn Failed    19 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_167_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   373 
+ 																 Txn Failed    389 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_167_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   414 
+ 																 Txn Failed    435 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+==> ./fifo_sim4_167_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   283 
+ 																 Txn Failed    298 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_32_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   373 
+ 																 Txn Failed    389 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_32_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   414 
+ 																 Txn Failed    435 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_9_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received 04e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received 0c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12e received 12e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   414 
+ 																 Txn Failed    435 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4_9_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received 04e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received 0c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12e received 12e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   283 
+ 																 Txn Failed    298 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim4.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   290 
+ 																 Txn Failed    315 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim5_9_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 01a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 02e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   429 
+ 																 Txn Failed    420 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim5_9_7.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 01a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 02e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   297 
+ 																 Txn Failed    284 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim6_167_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim6_167_7.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   560 
+ 																 Txn Failed    21 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim6_32_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   760 
+ 																 Txn Failed    2 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ###############################################################
+
+==> ./fifo_sim6_32_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   845 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim6.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   598 
+ 																 Txn Failed    7 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_167_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88b90
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f3406
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 000000000000000000000000000000000025912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   41 
+ 																 Txn Failed    721 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_167_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 000000000000000000000000000000000025912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   24 
+ 																 Txn Failed    825 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_167_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c45
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34bb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e698
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002591211a received 000000000000000000000000000000000025912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 000000000000000000000000000000000001abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   23 
+ 																 Txn Failed    558 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_32_188.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88b90
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f3406
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received 6d92e6a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received 25912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received 01abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   41 
+ 																 Txn Failed    721 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_32_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received 6d92e6a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received 25912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received 01abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   24 
+ 																 Txn Failed    825 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ###############################################################
+
+==> ./fifo_sim7_9_275.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received 04d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received 0c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 0a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 12f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   24 
+ 																 Txn Failed    825 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7_9_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received 045
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c5 received 0bb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 098
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 12f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   23 
+ 																 Txn Failed    558 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d92e6a2 received 6d92e6a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2591211a received 25912119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received 01abe32f
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   39 
+ 																 Txn Failed    566 
+  																 Txn Dropped   0 
+
+==> ./fifo_sim8_167_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002a9a4152 received 00000000000000000000000000000000002a9a4152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  761
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 761 
+ 																 Txn Passed   757 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+==> ./fifo_sim8_167_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002a9a4152 received 00000000000000000000000000000000002a9a4152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  848
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 848 
+ 																 Txn Passed   845 
+ 																 Txn Failed    3 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ###############################################################
+
+==> ./fifo_sim8_167_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00000000000000000000000000000000002a9a4152 received 0000000000000000000000000000000000xxxxxxxx
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  580
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 580 
+ 																 Txn Passed   508 
+ 																 Txn Failed    72 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+==> ./fifo_sim8_32_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2a9a4152 received 2a9a4152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  761
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 761 
+ 																 Txn Passed   757 
+ 																 Txn Failed    4 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim8_32_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2a9a4152 received 2a9a4152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  848
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 848 
+ 																 Txn Passed   845 
+ 																 Txn Failed    3 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim8_9_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 152 received 152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  848
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 848 
+ 																 Txn Passed   845 
+ 																 Txn Failed    3 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim8_9_7.log <==
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 152 received xxx
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  580
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 580 
+ 																 Txn Passed   508 
+ 																 Txn Failed    72 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim8.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2a9a4152 received 2a9a4152
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  604
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 604 
+ 																 Txn Passed   586 
+ 																 Txn Failed    18 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim9_167_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 0000000000000000000000000000000000fe541cd1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   832 
+ 																 Txn Failed    17 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim9_167_7.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004bf88c4f received 00000000000000000000000000000000004bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000004b1f34c5 received 00000000000000000000000000000000004b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000006d92e6a2 received 00000000000000000000000000000000006d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00000000000000000000000000000000002591211a received 00000000000000000000000000000000002591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000000000000000000000000000000000001abe32e received 0000000000000000000000000000000000fe541cd1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   553 
+ 																 Txn Failed    28 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+
+==> ./fifo_sim9_32_188.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received fe541cd1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     765
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  762
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 762 
+ 																 Txn Passed   734 
+ 																 Txn Failed    28 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim9_32_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received fe541cd1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   832 
+ 																 Txn Failed    17 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim9_9_275.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 0d1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     852
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  849
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 849 
+ 																 Txn Passed   832 
+ 																 Txn Failed    17 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+==> ./fifo_sim9_9_7.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c5 received 0c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11a received 11a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12e received 0d1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     584
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  581
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 581 
+ 																 Txn Passed   553 
+ 																 Txn Failed    28 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+==> ./fifo_sim9.log <==
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4bf88c4f received 4bf88c4f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b1f34c5 received 4b1f34c5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01abe32e received fe541cd1
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 57930: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     608
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  605
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 605 
+ 																 Txn Passed   577 
+ 																 Txn Failed    28 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 57930: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+
+
+
+
+
+
+
+
+

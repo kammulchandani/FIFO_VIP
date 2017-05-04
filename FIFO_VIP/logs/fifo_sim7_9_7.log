@@ -1,0 +1,1008 @@
+Command: ./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_9_7.log
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2; Runtime version I-2014.03-2;  Dec  9 23:54 2016
+----------------------------------------------------------------
+UVM-1.1d.VCS
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test fifo_random_test...
+ Displaying 9_7
+  Value of Depth:           8,  Width:           9   
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=5000000' provided on the command line is being applied.
+UVM_INFO fifo_vip/verif/fifo_uvc/./fifo_driver.sv(14) @ 0: uvm_test_top.tb_h.fifo_uvc_h.drvr_agnt_h.drvr_h [DRIVER] In build phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------
+Name                         Type                     Size  Value      
+-----------------------------------------------------------------------
+uvm_test_top                 fifo_random_test         -     @460       
+  tb_h                       fifo_tb                  -     @468       
+    fifo_scbd_h              fifo_scoreboard          -     @607       
+      rx_fifo                uvm_analysis_imp_rx      -     @624       
+      tx_fifo                uvm_analysis_imp_tx      -     @615       
+    fifo_uvc_h               fifo_uvc                 -     @476       
+      drvr_agnt_h            fifo_agent               -     @641       
+        drvr_h               fifo_driver              -     @672       
+          rsp_port           uvm_analysis_port        -     @689       
+          seq_item_port      uvm_seq_item_pull_port   -     @680       
+        mon_h                fifo_drvr_monitor        -     @655       
+          drvr_ap            uvm_analysis_port        -     @663       
+        seqr_h               fifo_sequencer           -     @698       
+          rsp_export         uvm_analysis_export      -     @706       
+          seq_item_export    uvm_seq_item_pull_imp    -     @812       
+          arbitration_queue  array                    0     -          
+          lock_queue         array                    0     -          
+          num_last_reqs      integral                 32    'd1        
+          num_last_rsps      integral                 32    'd1        
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE 
+      dut_agnt_h             fifo_dut_agent           -     @633       
+        fifo_dut_mon         fifo_dut_monitor         -     @834       
+          dut_ap             uvm_analysis_port        -     @842       
+        is_active            uvm_active_passive_enum  1     UVM_PASSIVE
+    fifo_vseqr_h             fifo_vsequencer          -     @484       
+      rsp_export             uvm_analysis_export      -     @492       
+      seq_item_export        uvm_seq_item_pull_imp    -     @598       
+      arbitration_queue      array                    0     -          
+      lock_queue             array                    0     -          
+      num_last_reqs          integral                 32    'd1        
+      num_last_rsps          integral                 32    'd1        
+-----------------------------------------------------------------------
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 000 received 000
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02d received 02e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07f received 081
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 029 received 02c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 171 received 175
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13a received 13f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bd received 0c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 136
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bf received 0be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06d received 06c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 144 received 143
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 183 received 182
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 161 received 160
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 168 received 167
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 109 received 108
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d7 received 1de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 178 received 177
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 114 received 113
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 155 received 154
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 106 received 105
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 113 received 112
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f0 received 0ef
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19d received 1a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 179 received 178
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e5 received 0e4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0eb received 0ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07c received 07b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 162 received 161
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fb received 1fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08f received 08e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 165 received 16c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c2 received 0c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01d received 01c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ba received 0b9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06f received 06e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f1 received 1f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 186 received 185
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f2 received 1f1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14c received 153
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19c received 19b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 163
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 040 received 03f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02a received 029
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 108 received 107
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1eb received 1ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 105 received 104
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f2 received 1f9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11c received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b4 received 0b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 003 received 002
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 145 received 144
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03f received 03e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 063 received 062
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13a received 139
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 0a9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ce received 0cd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 002 received 001
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06f received 06e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15c received 15b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 155 received 154
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 082 received 081
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0aa received 0a9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 015 received 01c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ee received 0ed
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 074 received 073
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 117 received 116
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c8 received 0c7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a9 received 1a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 004 received 003
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 068 received 067
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bd received 1c4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d3 received 1d2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c9 received 1c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f8 received 1f7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 034 received 033
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dc received 0db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02d received 02c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01d received 01c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 144 received 14b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 180 received 17f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 003 received 002
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06c received 06b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d8 received 1d7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11d received 11c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 125 received 124
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a4 received 0a3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 091 received 098
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 104 received 103
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0be received 0bd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e5 received 1e4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01d received 01c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 148 received 147
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15e received 15d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 010 received 00f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15b received 162
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fb received 0fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bb received 1ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c0 received 0bf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ec received 0eb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cd received 0cc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14c received 14b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f0 received 0ef
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e3 received 0ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 105 received 104
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a6 received 1a5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 075 received 074
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 009 received 008
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 128 received 127
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b8 received 1b7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 020 received 01f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 110 received 117
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 054 received 053
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 188 received 187
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a4 received 1a3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 115 received 114
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17a received 179
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b0 received 0af
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c7 received 0c6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06e received 075
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 125 received 124
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c7 received 0c6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 021 received 020
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ff received 1fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fa received 1f9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 124 received 123
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ad received 0ac
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ba received 1c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 191 received 190
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02e received 02d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 088 received 087
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09a received 099
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a9 received 0a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fd received 1fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06d received 06c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01a received 021
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d9 received 0d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 133 received 132
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17c received 17b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 110 received 10f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 045 received 044
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 058 received 057
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d5 received 1d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13f received 146
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09d received 09c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 163
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ec received 0eb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0db received 0da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 049 received 048
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03d received 03c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 194 received 193
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d3 received 1da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cd received 1cc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 155 received 154
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14e received 14d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 143 received 142
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 034 received 033
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 172 received 171
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ca received 1c9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 181 received 188
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 179 received 178
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f1 received 1f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00d received 00c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1da received 1d9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14d received 14c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cf received 1ce
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 099 received 098
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 085 received 08c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13b received 13a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 161 received 160
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14d received 14c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11b received 11a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d4 received 0d3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 054 received 053
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1dc received 1db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 142 received 149
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 162 received 161
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08c received 08b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02f received 02e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a1 received 0a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 126 received 125
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a0 received 09f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 188 received 187
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d9 received 0e0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d1 received 0d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 058 received 057
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12b received 12a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16b received 16a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 160 received 15f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f4 received 0f3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 137 received 136
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 043 received 04a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dc received 0db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07e received 07d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1de received 1dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08e received 08d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b3 received 0b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05e received 05d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e9 received 1f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15f received 15e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00b received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 171 received 170
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 104 received 103
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d5 received 1d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 165 received 164
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 096 received 095
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 054 received 05b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 058 received 057
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 183 received 182
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07a received 079
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 091 received 090
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e1 received 0e0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08b received 08a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 185 received 184
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fe received 005
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e3 received 0e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 063 received 062
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 163
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bf received 0be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 053 received 052
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 010 received 00f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 151 received 150
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09b received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fe received 0fd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18f received 18e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 159 received 158
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 097 received 096
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 071 received 070
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 019 received 018
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 0a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f3 received 0fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b5 received 1b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c8 received 0c7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 035 received 034
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b0 received 0af
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bc received 1bb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 140 received 13f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 084 received 083
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 031 received 038
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14f received 14e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 080 received 07f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b1 received 1b0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 012 received 011
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 010 received 00f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05f received 05e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 180 received 17f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1da received 1e1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b1 received 1b0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 192 received 191
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e4 received 1e3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 150 received 14f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 034 received 033
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 162 received 161
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 144 received 143
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0da received 0e1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ff received 1fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 032 received 031
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17e received 17d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 039 received 038
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 045 received 044
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04f received 04e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 028 received 02f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 182 received 181
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 062 received 061
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11e received 11d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bb received 1ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c2 received 0c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07e received 07d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 118 received 117
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 100 received 107
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12b received 12a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f7 received 0f6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c7 received 1c6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 128 received 127
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 084 received 083
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f7 received 0f6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d2 received 0d1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15b received 162
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 016 received 015
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b2 received 1b1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 199 received 198
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 076 received 075
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b2 received 1b1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18d received 18c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f4 received 0f3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ad received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 054 received 053
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bb received 1ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 038 received 037
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ca received 0c9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 149 received 148
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 163 received 162
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 022 received 021
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 016 received 01d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 145 received 144
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e6 received 0e5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 146 received 145
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ef received 1ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10e received 10d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 091 received 090
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c0 received 1bf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e9 received 1f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 018 received 017
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 112 received 111
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11f received 11e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e1 received 1e0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a4 received 1a3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17e received 17d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09b received 09a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ad received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01e received 01d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c6 received 1c5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 127 received 126
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 0a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 169 received 168
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ce received 0cd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 017 received 016
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 165 received 16c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04e received 04d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ac received 1ab
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1dc received 1db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 142 received 141
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 118 received 117
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f3 received 1f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 043 received 042
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c7 received 0ce
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e8 received 0e7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a2 received 1a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27265: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 015 received 014
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 190 received 190
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 188 received 189
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0df received 0e1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 035 received 038
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 118 received 124
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 149 received 146
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15f received 15d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05b received 05a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 174 received 173
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 197 received 196
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08d received 08c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14d received 14c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c8 received 0cf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06b received 06a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02a received 029
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 12e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08c received 08b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 12e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ab received 1aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bd received 0bc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0af received 0b6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b9 received 0b8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ec received 1eb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 078 received 077
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04c received 04b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 045 received 044
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 063 received 062
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 161 received 160
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ec received 1f3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 094 received 093
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16b received 16a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d2 received 0d1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06a received 069
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12c received 12b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ab received 1aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a3 received 1aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b6 received 1b5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04c received 04b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19a received 199
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 013 received 012
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b4 received 0b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fe received 0fd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b5 received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e5 received 0ec
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1be received 1bd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 158 received 157
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b2 received 1b1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 108 received 107
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00b received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e7 received 0e6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c0 received 1bf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09a received 0a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 083 received 082
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06d received 06c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 102 received 101
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 131 received 130
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03b received 03a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 148 received 147
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 112 received 111
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bd received 0c4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a2 received 0a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 028 received 027
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 134 received 133
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00b received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01c received 01b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13f received 13e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 022 received 029
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cf received 1ce
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 093 received 092
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f1 received 0f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 023 received 022
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10f received 10e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 171 received 170
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 042 received 041
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04e received 055
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09f received 09e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 125 received 124
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07f received 07e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 163
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d4 received 1d3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 163
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e9 received 0e8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d4 received 0db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bd received 0bc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15a received 159
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 197 received 196
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 092 received 091
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0df received 0de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c5 received 1c4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b9 received 1b8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02e received 035
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 070 received 06f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 142 received 141
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 172 received 171
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b4 received 1b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06e received 06d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04b received 04a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 196 received 195
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f7 received 1fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c2 received 1c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 093 received 092
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 020 received 01f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 178 received 177
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cd received 1cc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 014 received 013
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e7 received 1ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fb received 0fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f4 received 0f3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b4 received 1b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fd received 0fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 072 received 071
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 138 received 137
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 111 received 110
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 055 received 05c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04c received 04b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06b received 06a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 179 received 178
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 096 received 095
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 099 received 098
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 052 received 051
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c2 received 0c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cc received 0d3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a3 received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 028 received 027
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06d received 06c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d4 received 1d3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 142 received 141
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 087 received 086
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e4 received 1e3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 006 received 00d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 022 received 021
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 086 received 085
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d9 received 1d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07e received 07d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a1 received 1a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cc received 0cb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 169 received 168
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13a received 141
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 085 received 084
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 154 received 153
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b4 received 1b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cf received 0ce
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1de received 1dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09c received 09b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b5 received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 063 received 06a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04d received 04c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e6 received 1e5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 127 received 126
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 187 received 186
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a5 received 0a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 193 received 192
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13e received 145
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 000 received 1ff
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 103 received 102
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b8 received 0b7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 004 received 003
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 075 received 074
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f8 received 1f7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 107 received 106
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17f received 186
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 199 received 198
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16d received 16c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d0 received 0cf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ed received 1ec
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ba received 1b9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 179 received 178
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 032 received 039
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 052 received 051
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 024 received 023
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f1 received 1f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dc received 0db
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f8 received 1f7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fd received 1fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 056 received 055
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15b received 162
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 195 received 194
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a9 received 1a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 053 received 052
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10b received 10a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 12e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 085 received 084
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 180 received 17f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 169 received 170
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 072 received 071
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1aa received 1a9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dd received 0dc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18e received 18d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14d received 14c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 183 received 182
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a3 received 1a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b9 received 1c0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15a received 159
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bb received 1ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 018 received 017
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 067 received 066
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0db received 0da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0db received 0da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 180 received 17f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09b received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 140 received 13f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 079 received 078
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14e received 14d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e3 received 0e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 078 received 077
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10c received 10b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02f received 02e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18e received 195
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f9 received 0f8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15c received 15b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e5 received 1e4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 098 received 097
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 12e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00a received 009
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c0 received 1bf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07f received 086
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 060 received 05f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 003 received 002
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f8 received 0f7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14b received 14a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cd received 0cc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14b received 152
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 100 received 0ff
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 196 received 195
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01a received 019
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07f received 07e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11d received 11c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dd received 0dc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b3 received 1b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cf received 1d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e8 received 0e7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17a received 179
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 060 received 05f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b1 received 1b0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0db received 0da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c0 received 1bf
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 017 received 016
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13f received 146
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d6 received 0d5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c4 received 1c3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09b received 09a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19d received 19c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d2 received 1d1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 072 received 071
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00f received 00e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 167 received 16e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d1 received 1d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 057 received 056
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d7 received 0d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0aa received 0a9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16e received 16d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17e received 17d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 025 received 02c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1eb received 1ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 112 received 111
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 074 received 073
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 193 received 192
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 104 received 103
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 072 received 071
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 055 received 054
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 003 received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b5 received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 072
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c9 received 1c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 096 received 095
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 086 received 085
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 114 received 113
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ad received 0b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ba received 1b9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b4 received 1b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c2 received 1c1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07e received 07d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ab received 0aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 104 received 103
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a4 received 0ab
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11e received 11d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 037 received 036
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c8 received 0c7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 089 received 088
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f5 received 1f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01d received 01c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ba received 0b9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10b received 112
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ee received 1ed
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a4 received 1a3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e7 received 1e6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a9 received 0a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 177 received 176
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1da received 1d9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0da received 0e1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 038 received 037
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ad received 0ac
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 079 received 078
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0af received 0ae
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02d received 02c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ac received 0ab
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04c received 04b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 114 received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d1 received 1d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17e received 17d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 184 received 183
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 108 received 107
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b7 received 0b6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13e received 13d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11c received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0eb received 0f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09d received 09c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14f received 14e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18d received 18c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a8 received 0a7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07c received 07b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ab received 1aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0be received 0c5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00b received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f0 received 1ef
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 026 received 025
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 115 received 114
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03f received 03e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 012 received 011
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b7 received 0b6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ec received 0f3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02e received 02d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cc received 1cb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c8 received 0c7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 127 received 126
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 177 received 176
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 056 received 055
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 127 received 126
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10e received 115
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d8 received 1d7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11d received 11c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 088 received 087
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f6 received 0f5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e5 received 1e4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 043 received 042
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f5 received 1f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19b received 1a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 100 received 0ff
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 060 received 05f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17c received 17b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15f received 15e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 143 received 142
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ff received 0fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d6 received 0d5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17d received 184
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c3 received 0c1
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 187 received 187
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48625: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16e received 16d
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0ae received 0ae
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 080 received 07f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 19c received 19c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48785: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 16c received 16c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01b received 023
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02b received 023
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 022 received 022
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 057 received 056
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48905: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 007 received 006
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 013 received 013
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48945: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48985: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 011 received 010
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e3 received 1eb
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49145: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 035 received 031
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e9 received 1e7
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01f received 01f
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49265: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 145 received 145
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c6 received 0c6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10d received 10e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 187 received 186
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ce received 0d5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49585: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ef received 1ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49625: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 192 received 191
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1f6 received 1f6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fa received 0f8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 100 received 0ff
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ef received 0f0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 172 received 172
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 047 received 04d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a7 received 19c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15f received 155
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ff received 1fd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50105: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ab received 1aa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11f received 11f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a0 received 1a9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e6 received 1ef
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f9 received 0fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ad received 1a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 086 received 07c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 138 received 12f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ab received 0a3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 189 received 190
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 138
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 065 received 06f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14a received 154
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 144 received 13b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cd received 1cc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 109 received 108
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 18c received 18c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50705: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04f received 04f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 061 received 062
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00f received 00e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0de received 0e5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ae received 0a6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 119 received 119
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50985: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 169 received 166
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b1 received 1af
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51065: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 127 received 127
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 059 received 05a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51105: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1f2 received 1f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06e received 074
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cc received 0c2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b8 received 0b0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51305: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a0 received 0a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b4 received 0b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 119
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0a2 received 0a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 130 received 139
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 169 received 171
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ba received 0b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17f received 177
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06d received 06e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c9 received 1c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 123 received 122
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01a received 018
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 164 received 16b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10e received 115
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04e received 044
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 055 received 04c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01e received 017
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0df received 0df
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1d1 received 1d1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 137 received 138
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52025: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 164 received 164
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05d received 064
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ae received 0a6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c8 received 1c7
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52145: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0f9 received 0f9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b6 received 0b3
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 182 received 180
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52265: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 082 received 082
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ce received 1d7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 006 received 00e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1df received 1d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 041 received 040
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a6 received 0a5
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 031 received 031
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e8 received 1e7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0db received 0e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a4 received 1ab
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05b received 062
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e8 received 0df
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b6 received 1ae
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 082 received 07a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07a received 07b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 002 received 004
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 104 received 103
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b2 received 0b8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bc received 1c4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 132 received 130
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04d received 04b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53185: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 039 received 037
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 154 received 153
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05f received 065
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 058 received 05e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16c received 172
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12c received 133
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00d received 006
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 044 received 03a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 118 received 116
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53625: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 073 received 078
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 118 received 11e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 113 received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 123 received 12c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03a received 044
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b0 received 1ab
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 012 received 00b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53945: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fb received 1f8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 091 received 096
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53985: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cc received 1d1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15c received 162
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54025: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ea received 1f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13c received 146
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18f received 18a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54105: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 199 received 193
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 181 received 177
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19f received 19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 053 received 059
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ad received 1b5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bf received 1c9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 020 received 02a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07f received 077
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 171 received 171
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 056 received 054
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 163 received 166
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f9 received 1fd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0cf received 0d5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 028 received 02e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 096 received 09e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02d received 027
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cc received 1c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 155 received 150
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 151 received 151
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54905: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0dc received 0dc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11b received 11b
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 008 received 00e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11a received 120
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12f received 127
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55105: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ba received 0b2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 012 received 012
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55145: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 130 received 130
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 149 received 149
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55225: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1bc received 1bc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d6 received 1dd
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55265: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11b received 123
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 04a received 041
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 109 received 100
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e8 received 0e7
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55385: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05b received 05b
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 038 received 038
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e2 received 1ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d0 received 0d7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16f received 177
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 069 received 061
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ab received 0a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08b received 08f
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 114 received 117
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09b received 09e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a3 received 1a7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 004 received 00a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b2 received 1b9
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0af received 0a7
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a0 received 098
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56145: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 119 received 113
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 098 received 093
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ec received 1e8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ed received 1ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b0 received 0bc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 175 received 17c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 183 received 17c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b6 received 1b5
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d8 received 1d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fd received 1fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a9 received 1aa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 107 received 107
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f0 received 1ef
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19a received 1a1
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0df received 0dd
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 065 received 065
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56705: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 100 received 100
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a5 received 1a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fc received 0fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56945: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 086 received 08c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 131 received 138
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 056 received 05d
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ff received 0f6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d6 received 1cd
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 57205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 171 received 171
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03d received 03c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 065 received 06a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 179 received 180
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d0 received 0d7
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 77450: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     907
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  903
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 903 
+ 																 Txn Passed   41 
+ 																 Txn Failed    862 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   51
+UVM_WARNING :    0
+UVM_ERROR :  862
+UVM_FATAL :    0
+** Report counts by id
+[    $$$$$$     ]     2
+[    TXN_IN     ]     1
+[    TXN_OUT    ]     1
+[    TXN_STATUS ]     1
+[DATA Matched]    41
+[DATA Mismatch]   862
+[DRIVER]     1
+[RNTST]     1
+[TEST_DONE]     1
+[TIMOUTSET]     1
+[UVMTOP]     1
+$finish called from file "/apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_root.svh", line 438.
+$finish at simulation time                77450
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 77450 ns
+CPU Time:      0.700 seconds;       Data structure size:   0.2Mb
+Fri Dec  9 23:54:23 2016

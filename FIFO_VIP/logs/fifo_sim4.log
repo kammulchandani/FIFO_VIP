@@ -1,0 +1,1034 @@
+Command: ./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4.log
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2; Runtime version I-2014.03-2;  Dec 10 00:13 2016
+----------------------------------------------------------------
+UVM-1.1d.VCS
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test fifo_random_test...
+ Displaying Nothing
+  Value of Depth:          32,  Width:          32   
+UVM_INFO @ 0: reporter [TIMOUTSET] '+UVM_TIMEOUT=5000000' provided on the command line is being applied.
+UVM_INFO fifo_vip/verif/fifo_uvc/./fifo_driver.sv(14) @ 0: uvm_test_top.tb_h.fifo_uvc_h.drvr_agnt_h.drvr_h [DRIVER] In build phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------
+Name                         Type                     Size  Value      
+-----------------------------------------------------------------------
+uvm_test_top                 fifo_random_test         -     @460       
+  tb_h                       fifo_tb                  -     @468       
+    fifo_scbd_h              fifo_scoreboard          -     @607       
+      rx_fifo                uvm_analysis_imp_rx      -     @624       
+      tx_fifo                uvm_analysis_imp_tx      -     @615       
+    fifo_uvc_h               fifo_uvc                 -     @476       
+      drvr_agnt_h            fifo_agent               -     @641       
+        drvr_h               fifo_driver              -     @672       
+          rsp_port           uvm_analysis_port        -     @689       
+          seq_item_port      uvm_seq_item_pull_port   -     @680       
+        mon_h                fifo_drvr_monitor        -     @655       
+          drvr_ap            uvm_analysis_port        -     @663       
+        seqr_h               fifo_sequencer           -     @698       
+          rsp_export         uvm_analysis_export      -     @706       
+          seq_item_export    uvm_seq_item_pull_imp    -     @812       
+          arbitration_queue  array                    0     -          
+          lock_queue         array                    0     -          
+          num_last_reqs      integral                 32    'd1        
+          num_last_rsps      integral                 32    'd1        
+        is_active            uvm_active_passive_enum  1     UVM_ACTIVE 
+      dut_agnt_h             fifo_dut_agent           -     @633       
+        fifo_dut_mon         fifo_dut_monitor         -     @834       
+          dut_ap             uvm_analysis_port        -     @842       
+        is_active            uvm_active_passive_enum  1     UVM_PASSIVE
+    fifo_vseqr_h             fifo_vsequencer          -     @484       
+      rsp_export             uvm_analysis_export      -     @492       
+      seq_item_export        uvm_seq_item_pull_imp    -     @598       
+      arbitration_queue      array                    0     -          
+      lock_queue             array                    0     -          
+      num_last_reqs          integral                 32    'd1        
+      num_last_rsps          integral                 32    'd1        
+-----------------------------------------------------------------------
+
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 001b40e3 received 001b40e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05a39163 received 05a39162
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4fe9ab60 received 4fe9ab60
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 452eddfa received 452eddfa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2e235ba0 received 2e235ba0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 274b75df received 274b75de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17b366cb received 17b366ca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 25f94d09 received 25f94d08
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5fa9bd10 received 5fa9bd10
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a6269c3 received 0a6269c2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 03680e42 received 03680e42
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7a45c048 received 7a45c048
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b5b2039 received 1b5b2038
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 002c181c received 002c181c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 202ad479 received 202ad478
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 272e448d received 272e448c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2361cddf received 2361cdde
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 64a578cb received 64a578ca
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 54d6fc90 received 54d6fc90
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b51c135 received 1b51c134
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d7db7c1 received 6d7db7c0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 6925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6ebe3ecf received 6ebe3ece
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 6965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0b877ec4 received 0b877ec4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 57907499 received 57907498
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 284c3547 received 284c3546
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5d2239b5 received 5d2239b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 145dc203 received 145dc202
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7c92fa69 received 7c92fa68
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11ee8ecd received 11ee8ecc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0389ebc5 received 0389ebc4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5bbee281 received 5bbee280
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 354a21aa received 354a21aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17f54c79 received 17f54c78
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dacdc85 received 0dacdc84
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 689aa551 received 689aa550
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70724ce5 received 70724ce4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2c310b26 received 2c310b26
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d0412da received 6d0412da
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 213352d2 received 213352d2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7af150ef received 7af150ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6f1aa5bf received 6f1aa5be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 228f94f1 received 228f94f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4e63852b received 4e63852a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2abe69e0 received 2abe69e0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 20d81f88 received 20d81f88
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 7885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 226a501a received 226a501a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5e0875fd received 5e0875fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 7965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 33ae072d received 33ae072c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2f3a381a received 2f3a381a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cb75b75 received 1cb75b74
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d766501 received 1d766500
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f88fe11 received 0f88fe10
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c58d16c received 6c58d16c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3f67f517 received 3f67f516
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 11f7e22b received 11f7e22a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2cbed87f received 2cbed87e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 58407417 received 58407416
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 03b3b0f2 received 03b3b0f2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5740b1ec received 5740b1ec
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0dea7702 received 0dea7702
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7e2bd53b received 7e2bd53a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 30c0b0dc received 30c0b0dc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7e5e2c20 received 7e5e2c20
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2993af18 received 2993af18
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 338069f9 received 338069f8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2c97c6a8 received 2c97c6a8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 48038468 received 48038468
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 455a23f4 received 455a23f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 210f1199 received 210f1198
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7d64d722 received 7d64d722
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 20a5488f received 20a5488e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 8925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7e442022 received 7e442022
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 8965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 638397e7 received 638397e6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 16907bc5 received 16907bc4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 407f0ff9 received 407f0ff8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 68af4a65 received 68af4a64
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07e0ddeb received 07e0ddea
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4c72028e received 4c72028e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 27584038 received 27584038
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5454d5c7 received 5454d5c6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19d68249 received 19d68248
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 404c6b29 received 404c6b28
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0de3c4fc received 0de3c4fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b84fe0b received 2b84fe0a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6aa9b764 received 6aa9b764
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 10407484 received 10407484
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 154098ca received 154098ca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 42aaa4cb received 42aaa4ca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5dd345db received 5dd345da
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e91b281 received 0e91b280
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 22f9c523 received 22f9c522
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 191c8531 received 191c8530
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 75215315 received 75215314
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 40844a35 received 40844a34
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d00d295 received 0d00d294
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 37a17c78 received 37a17c78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 9925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3a6965d0 received 3a6965d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 9965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 793e0595 received 793e0594
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7f0aaeab received 7f0aaeaa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 468f533f received 468f533e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1b921af6 received 1b921af6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 05b60fbd received 05b60fbc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 43b7dc66 received 43b7dc66
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 68816e78 received 68816e78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 30153896 received 30153896
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0070496f received 0070496e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0d96f21f received 0d96f21e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7b04ee0f received 7b04ee0e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 23be3327 received 23be3326
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 24a1b66b received 24a1b66a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 549d5fb9 received 549d5fb8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 522c4889 received 522c4888
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 609f70ac received 609f70ac
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 57ccae9d received 57ccae9c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3cb5c1a3 received 3cb5c1a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 03bd704c received 03bd704c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 290a964c received 290a964c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6bd03b7d received 6bd03b7c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0219911c received 0219911c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 10845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b75f4d9 received 2b75f4d8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5f639b62 received 5f639b62
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7775084e received 7775084e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 10965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 581aa222 received 581aa222
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d97df55 received 1d97df54
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 59ac4df7 received 59ac4df6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2997ea14 received 2997ea14
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5e1f4a91 received 5e1f4a90
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5c69ca70 received 5c69ca70
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 20af3113 received 20af3112
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 34d18c20 received 34d18c20
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4eab7089 received 4eab7088
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4137928e received 4137928e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2518b048 received 2518b048
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 77168d24 received 77168d24
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4401097d received 4401097c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6218babf received 6218babe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a8f3d6b received 0a8f3d6a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 311339b8 received 311339b8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 748731b0 received 748731b0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 22bcf9d2 received 22bcf9d2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2f5dc46c received 2f5dc46c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 56120428 received 56120428
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18eab819 received 18eab818
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4dc28ddb received 4dc28dda
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 24bb9dc4 received 24bb9dc4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18f923e5 received 18f923e4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 11925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04381916 received 04381916
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 11965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3ffc4183 received 3ffc4182
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3f5782ba received 3f5782ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2485379f received 2485379e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 55badcdd received 55badcdc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 775fd144 received 775fd144
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3233bc1c received 3233bc1c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05dfda32 received 05dfda32
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 510cb7b4 received 510cb7b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 134128a1 received 134128a0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 552d54a2 received 552d54a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3fb0f578 received 3fb0f578
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4db9491e received 4db9491e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03433c2d received 03433c2c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b261d0b received 1b261d0a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 666900be received 666900be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6f9295a3 received 6f9295a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2204f8a0 received 2204f8a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08a6dc13 received 08a6dc12
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0b10a1a6 received 0b10a1a6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3ab8bb32 received 3ab8bb32
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 27f914bf received 27f914be
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 12805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 13ab3cd8 received 13ab3cd8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2c86feb5 received 2c86feb4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1d89828f received 1d89828e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5b7ac05d received 5b7ac05c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 12965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49287603 received 49287602
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 07ad53ba received 07ad53ba
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 328e424a received 328e424a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3a7925f4 received 3a7925f4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 79ae6a06 received 79ae6a06
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6aac5dfd received 6aac5dfc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 69c2ad40 received 69c2ad40
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 687cd251 received 687cd250
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 46832d76 received 46832d76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6e50b8c9 received 6e50b8c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 394fa6d9 received 394fa6d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70346d59 received 70346d58
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2f30522c received 2f30522c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3e33d272 received 3e33d272
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 41b9441e received 41b9441e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7b58fddc received 7b58fddc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 29a99865 received 29a99864
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 79f7d46a received 79f7d46a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5332a6a3 received 5332a6a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10a00301 received 10a00300
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 27692a43 received 27692a42
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6c36a635 received 6c36a634
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 13845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 69b911a1 received 69b911a0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6379986c received 6379986c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5a9ee918 received 5a9ee918
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 13965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4a80b2a0 received 4a80b2a0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7b8bb490 received 7b8bb490
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 285425a8 received 285425a8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c579128 received 6c579128
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11940514 received 11940514
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05ee5f76 received 05ee5f76
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1434c5e6 received 1434c5e6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 24c0a165 received 24c0a164
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 54171813 received 54171812
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7111e46f received 7111e46e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1b2300d2 received 1b2300d2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1a3fef72 received 1a3fef72
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b0f402f received 0b0f402e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 657bcab7 received 657bcab6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d77e788 received 6d77e788
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2c04df5b received 2c04df5a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5e9398f6 received 5e9398f6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 66ef18ba received 66ef18ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 48706eb5 received 48706eb4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b8585a9 received 1b8585a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fdb23ef received 0fdb23ee
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0e7b6160 received 0e7b6160
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7bcead26 received 7bcead26
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 51c8f01b received 51c8f01a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 14925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 566e1ef6 received 566e1ef6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 14965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0bc9b4d1 received 0bc9b4d0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7d3c7d2e received 7d3c7d2e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2be95d66 received 2be95d66
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 416bebe4 received 416bebe4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6e2ea881 received 6e2ea880
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 60914eab received 60914eaa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7aaa7b1d received 7aaa7b1c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6ca7b95f received 6ca7b95e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12cc44e9 received 12cc44e8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4a8e4629 received 4a8e4628
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b122141 received 0b122140
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7070b50b received 7070b50a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4f425b84 received 4f425b84
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 122cfb0f received 122cfb0e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1c25d785 received 1c25d784
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5177c0d4 received 5177c0d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70abfc6f received 70abfc6e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3fde16ef received 3fde16ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5c60c057 received 5c60c056
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4c79b5ac received 4c79b5ac
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2c85dbb8 received 2c85dbb8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 57f0a8aa received 57f0a8aa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4a768c88 received 4a768c88
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 15885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 020ef070 received 020ef070
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6a3581bf received 6a3581be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 15965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 137b5429 received 137b5428
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1fd2800f received 1fd2800e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 71e7f87f received 71e7f87e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b23d0dd received 2b23d0dc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 52f7cc58 received 52f7cc58
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0e302978 received 0e302978
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 433a943a received 433a943a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1440560a received 1440560a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5e79e7cc received 5e79e7cc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 76a46780 received 76a46780
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 591fb0df received 591fb0de
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 06baef54 received 06baef54
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 560a94d6 received 560a94d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 77805edb received 77805eda
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 68057264 received 68057264
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 508d2c5d received 508d2c5c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 462624b5 received 462624b4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 29f7d8a0 received 29f7d8a0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 100b57d3 received 100b57d2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 36343dd5 received 36343dd4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02499dbb received 02499dba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 02036af5 received 02036af4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0befac73 received 0befac72
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70097517 received 70097516
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 16925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7b407eea received 7b407eea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 16965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3629d5c1 received 3629d5c0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 724d9beb received 724d9bea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3c97a731 received 3c97a730
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6a1baac1 received 6a1baac0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4694aaa5 received 4694aaa4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6c49b21f received 6c49b21e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 688b5be9 received 688b5be8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5b5905ca received 5b5905ca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3ff25329 received 3ff25328
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4652b770 received 4652b770
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e7f45d7 received 0e7f45d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2fd2c469 received 2fd2c468
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 473d017a received 473d017a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08b428b5 received 08b428b4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 09fa9f76 received 09fa9f76
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4514f63c received 4514f63c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70543441 received 70543440
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4c58dffb received 4c58dffa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 63ce9c97 received 63ce9c96
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3772bb4d received 3772bb4c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 585b7fae received 585b7fae
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4fdbdf42 received 4fdbdf42
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 630bf479 received 630bf478
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 17885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 601ad44a received 601ad44a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2570efa1 received 2570efa0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 17965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ee0f829 received 1ee0f828
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 38fc18f0 received 38fc18f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 25189b0d received 25189b0c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1086e0e9 received 1086e0e8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5ee7f656 received 5ee7f656
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5a558e79 received 5a558e78
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6b6453b5 received 6b6453b4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 02c82106 received 02c82106
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3650a9c5 received 3650a9c4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 733a2061 received 733a2060
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4ec241f4 received 4ec241f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 36506341 received 36506340
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 71a1e0d0 received 71a1e0d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e892db7 received 1e892db6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 55a58bbe received 55a58bbe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4a81ae19 received 4a81ae18
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 777467c4 received 777467c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 070b835e received 070b835e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 594b1a01 received 594b1a00
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 18725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 692fbd66 received 692fbd66
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6c6a35b1 received 6c6a35b0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 445a2b61 received 445a2b60
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 42c53ecb received 42c53eca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 28a34b25 received 28a34b24
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1cd3b991 received 1cd3b990
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 18965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 68c7cdcb received 68c7cdca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3dfff6eb received 3dfff6ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 21cd863d received 21cd863c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 19085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 122bc065 received 122bc064
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 19125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3816ab10 received 3816ab10
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 19165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7d2138be received 7d2138be
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 19205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 43152492 received 43152492
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 19245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 22590a28 received 22590a28
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27265: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 63e4fd86 received 63e4fd86
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3c2cada5 received 3c2cada4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27305: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 348c5c86 received 348c5c86
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2fdba2dc received 2fdba2dc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 537cd905 received 537cd904
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 15bdf786 received 15bdf786
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 43d0cb21 received 43d0cb20
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 78de7f00 received 78de7f00
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27425: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 64ff5fb7 received 64ff5fb6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5447fc6e received 5447fc6e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27465: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2d28c21e received 2d28c21e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19dc36a9 received 19dc36a8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27505: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 42e4bffa received 42e4bffa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2ca93df4 received 2ca93df4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27545: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 49cdf7ca received 49cdf7ca
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3582b9f8 received 3582b9f8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27585: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7b9aa2af received 7b9aa2ae
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 684e9f64 received 684e9f64
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27625: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 630b92fe received 630b92fe
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7e62e434 received 7e62e434
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0876a842 received 0876a842
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 18f1c7e5 received 18f1c7e4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27705: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5d1124e2 received 5d1124e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7440348d received 7440348c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27745: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 42bfadfb received 42bfadfa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 320cc3b3 received 320cc3b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 311e805d received 311e805c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5bf31c99 received 5bf31c98
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 46b0d110 received 46b0d110
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 27845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 63061608 received 63061608
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 29260917 received 29260916
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 27885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6bf61ac3 received 6bf61ac2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b7b8290 received 4b7b8290
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2e80bece received 2e80bece
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 72ef1228 received 72ef1228
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 51a2f682 received 51a2f682
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 69b93db9 received 69b93db8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1913029b received 1913029a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0d645ade received 0d645ade
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 45478e76 received 45478e76
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 25e1bb30 received 25e1bb30
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 518aeae2 received 518aeae2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 34885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 25ef0c3b received 25ef0c3a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3561e4f6 received 3561e4f6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 34965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 17a8ea3a received 17a8ea3a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15e86469 received 15e86468
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1725e1c1 received 1725e1c0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7d9f25d7 received 7d9f25d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4f071b33 received 4f071b32
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 498c54f1 received 498c54f0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 48a7da28 received 48a7da28
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4c778467 received 4c778466
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c3b0ca4 received 6c3b0ca4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3d8cb656 received 3d8cb656
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12919f96 received 12919f96
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5bcad1e0 received 5bcad1e0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d64ba40 received 6d64ba40
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1a570e74 received 1a570e74
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4d44f581 received 4d44f580
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2581acb7 received 2581acb6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7572a4a6 received 7572a4a6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 74716db4 received 74716db4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 76d7e727 received 76d7e726
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0987a441 received 0987a440
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 33539a8a received 33539a8a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 426850ff received 426850fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 569d2375 received 569d2374
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5fd9983a received 5fd9983a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 35925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 16abb3d8 received 16abb3d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 35965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5ca2fe0d received 5ca2fe0c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 37cf8dc2 received 37cf8dc2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2b07ec76 received 2b07ec76
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7652a8fe received 7652a8fe
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 210dd170 received 210dd170
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 016aacc0 received 016aacc0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5cf87422 received 5cf87422
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 381560b6 received 381560b6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 13487640 received 13487640
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 107107e0 received 107107e0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4dbb9997 received 4dbb9996
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6047e416 received 6047e416
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2637723c received 2637723c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 076ae6b5 received 076ae6b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 290c3e7f received 290c3e7e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 225447c4 received 225447c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 17b1e3c2 received 17b1e3c2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 545d97c2 received 545d97c2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 051847d1 received 051847d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 268bff17 received 268bff16
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4168566e received 4168566e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03859c8b received 03859c8a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 73ea42ad received 73ea42ac
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 67fef27a received 67fef27a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 36925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 04476184 received 04476184
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 36965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 79f05269 received 79f05268
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5268f84f received 5268f84e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1e23f69f received 1e23f69e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 447f0f8d received 447f0f8c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 21e1cef8 received 21e1cef8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2e3e4dbd received 2e3e4dbc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 48558075 received 48558074
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49c52089 received 49c52088
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 13e0b419 received 13e0b418
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 64a19f0d received 64a19f0c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4fe15e1e received 4fe15e1e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c95ea98 received 6c95ea98
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3a815864 received 3a815864
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2c8828fc received 2c8828fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5d2457c9 received 5d2457c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a9186e3 received 1a9186e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17b1342d received 17b1342c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b59c765 received 2b59c764
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 32e43494 received 32e43494
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1254f164 received 1254f164
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5bf44fae received 5bf44fae
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 78b48ee6 received 78b48ee6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 37205238 received 37205238
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 45cfdb9f received 45cfdb9e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 37925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4e174676 received 4e174676
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 37965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 285d3263 received 285d3262
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2e467c78 received 2e467c78
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7686087b received 7686087a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dc3d3f5 received 0dc3d3f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4973a3e3 received 4973a3e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 72c837bd received 72c837bc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7ee1a112 received 7ee1a112
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3847d02d received 3847d02c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1267d743 received 1267d742
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 041772ad received 041772ac
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6f052d17 received 6f052d16
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 39afc1f4 received 39afc1f4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 428348bf received 428348be
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5bd57d70 received 5bd57d70
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7cfd5614 received 7cfd5614
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5f6f459a received 5f6f459a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5e92a456 received 5e92a456
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 768281f6 received 768281f6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5fa04a09 received 5fa04a08
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e4fd211 received 0e4fd210
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 271d691e received 271d691e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 623c0586 received 623c0586
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4aaa6953 received 4aaa6952
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4989a770 received 4989a770
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 38925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4d625391 received 4d625390
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 38965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6f3a1ff0 received 6f3a1ff0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 12c8a446 received 12c8a446
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 53367779 received 53367778
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4a447b3c received 4a447b3c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 58545129 received 58545128
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 599a6492 received 599a6492
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1471fb2b received 1471fb2a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 45100d15 received 45100d14
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4db5c3ea received 4db5c3ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7a881227 received 7a881226
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 685a0d6b received 685a0d6a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 50f6d476 received 50f6d476
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7c913205 received 7c913204
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 00d8ab9f received 00d8ab9e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 045d22f0 received 045d22f0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 10ce346c received 10ce346c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7b3998be received 7b3998be
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4fcc07dc received 4fcc07dc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 742c7bd0 received 742c7bd0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 199ba13b received 199ba13a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d3dd95d received 6d3dd95c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2750a3df received 2750a3de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10b743e5 received 10b743e4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6a9d414e received 6a9d414e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 39925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 368b1e0f received 368b1e0e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 39965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 59ffa71a received 59ffa71a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3bc1506f received 3bc1506e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 539d1537 received 539d1536
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 16b6565c received 16b6565c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c64ac2f received 0c64ac2e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49aba8b3 received 49aba8b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7cdafd99 received 7cdafd98
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 64e3b305 received 64e3b304
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 70e2a6be received 70e2a6be
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14b6d9df received 14b6d9de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7277b817 received 7277b816
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bdcf0d9 received 1bdcf0d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 27df90c5 received 27df90c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 00160230 received 00160230
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 206e6406 received 206e6406
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 170c6562 received 170c6562
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 40605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 009608d4 received 009608d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0eba174f received 0eba174e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7f086a93 received 7f086a92
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 60e5bd77 received 60e5bd76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2ff635b7 received 2ff635b6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 73317b79 received 73317b78
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2da7a82b received 2da7a82a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5a0760c3 received 5a0760c2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7dbfd005 received 7dbfd004
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 40965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 37444fff received 37444ffe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 33e205a3 received 33e205a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6f3c6f2d received 6f3c6f2c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4646f028 received 4646f028
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4a448319 received 4a448318
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 448c1498 received 448c1498
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3e3ac0c8 received 3e3ac0c8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1b8fecd5 received 1b8fecd4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7f02a6b2 received 7f02a6b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7fb640ab received 7fb640aa
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0ac246de received 0ac246de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b6d36b7 received 2b6d36b6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 72b192df received 72b192de
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3521ef9f received 3521ef9e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0a799109 received 0a799108
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 617f3742 received 617f3742
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 65f5d3eb received 65f5d3ea
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 50abc6cc received 50abc6cc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3017460e received 3017460e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d33a186 received 6d33a186
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4e49686d received 4e49686c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 35476bff received 35476bfe
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1bb57fac received 1bb57fac
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 41885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 71d5c21a received 71d5c21a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 29af8b9f received 29af8b9e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 41965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7069dcdb received 7069dcda
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7475b02b received 7475b02a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 37360bc7 received 37360bc6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6b5f754e received 6b5f754e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 77740ae0 received 77740ae0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 03157070 received 03157070
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4ced62fa received 4ced62fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5b61fa63 received 5b61fa62
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5b60ae2f received 5b60ae2e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 30031b84 received 30031b84
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 53635d8f received 53635d8e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2800b8fa received 2800b8fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f26b57d received 0f26b57c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 29dacea7 received 29dacea6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5c7aed7e received 5c7aed7e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0f1f51ba received 0f1f51ba
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2191946f received 2191946e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05e3b07a received 05e3b07a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 71cb52ec received 71cb52ec
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5f39e859 received 5f39e858
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6b9008a8 received 6b9008a8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3cb655d5 received 3cb655d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 42845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1306775f received 1306775e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 25fea91a received 25fea91a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 414f331c received 414f331c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 42965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 781b9e38 received 781b9e38
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0fea4637 received 0fea4636
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0c162d79 received 0c162d78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 33fa7a78 received 33fa7a78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 007bc140 received 007bc140
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f031b97 received 1f031b96
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 69670c53 received 69670c52
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4e6ad380 received 4e6ad380
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 59b1e5ce received 59b1e5ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 297aa5e4 received 297aa5e4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 200c830a received 200c830a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 72ce0c65 received 72ce0c64
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 435f4f2d received 435f4f2c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4fe64b9b received 4fe64b9a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 63b34589 received 63b34588
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5bb2fcf4 received 5bb2fcf4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 366f8cfd received 366f8cfc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 79f2ed21 received 79f2ed20
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1d0a4d38 received 1d0a4d38
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2f5a07ce received 2f5a07ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0c1a11c2 received 0c1a11c2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 362f1e20 received 362f1e20
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1b6a9812 received 1b6a9812
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 43885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 78099e3b received 78099e3a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 02f9f79e received 02f9f79e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 43965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 27e5d55c received 27e5d55c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5ac4c635 received 5ac4c634
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 789609d6 received 789609d6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5372e665 received 5372e664
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 73a6f233 received 73a6f232
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3a5bbfeb received 3a5bbfea
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4e4676fc received 4e4676fc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01f59ba6 received 01f59ba6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6ce8af73 received 6ce8af72
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3a350d7d received 3a350d7c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4e6b9c2c received 4e6b9c2c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0ae4fc8e received 0ae4fc8e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5af2cff7 received 5af2cff6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 55451bea received 55451bea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6dc08b93 received 6dc08b92
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2fc4d064 received 2fc4d064
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 44a7e613 received 44a7e612
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3d6cadd6 received 3d6cadd6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 624f61b0 received 624f61b0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0e869414 received 0e869414
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7268d5cf received 7268d5ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 609735ea received 609735ea
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 44845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0e5cd7ad received 0e5cd7ac
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4aae8042 received 4aae8042
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4064ed0a received 4064ed0a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 44965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5bca5286 received 5bca5286
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 56b71cc2 received 56b71cc2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0e602af8 received 0e602af8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 39304e42 received 39304e42
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 12daf5b3 received 12daf5b2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 10c90eb7 received 10c90eb6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 229c2fa5 received 229c2fa4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 15a999ec received 15a999ec
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 73f9863a received 73f9863a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7756e9df received 7756e9de
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7698b578 received 7698b578
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 38510c29 received 38510c28
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0fc3a1f6 received 0fc3a1f6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1565e15e received 1565e15e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45525: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 20816a2d received 20816a2c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 548397ea received 548397ea
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 63c9da02 received 63c9da02
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 06f04594 received 06f04594
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1909a47c received 1909a47c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5129b992 received 5129b992
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7eb6f4cf received 7eb6f4ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45805: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 03acec76 received 03acec76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5751abb5 received 5751abb4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 45885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 216e1c80 received 216e1c80
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7dc845c3 received 7dc845c2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 45965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 34846125 received 34846124
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3cfce43f received 3cfce43e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 553e0ea2 received 553e0ea2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2ef238e6 received 2ef238e6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7b422a00 received 7b422a00
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 73e14975 received 73e14974
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1b4f37a4 received 1b4f37a4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 470c7570 received 470c7570
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 15b3d8ec received 15b3d8ec
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4f389eff received 4f389efe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15fb896b received 15fb896a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 45a896f8 received 45a896f8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 15853742 received 15853742
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 099c9b18 received 099c9b18
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2283f5c4 received 2283f5c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7a3f49e6 received 7a3f49e6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2fda908a received 2fda908a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 30813f3d received 30813f3c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6108c023 received 6108c022
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 56ed796b received 56ed796a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 67d12e90 received 67d12e90
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 639d9bbf received 639d9bbe
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1d725f4c received 1d725f4c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 53a83ee9 received 53a83ee8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 46925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 29e38160 received 29e38160
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 46965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 71bc0fe7 received 71bc0fe6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 15187274 received 15187274
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47045: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0f8b6797 received 0f8b6796
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7575bc78 received 7575bc78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1bc8cf98 received 1bc8cf98
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 57ddce51 received 57ddce50
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4160cd97 received 4160cd96
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3e19b868 received 3e19b868
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 44cf703e received 44cf703e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 22bc70b2 received 22bc70b2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 07e6eb04 received 07e6eb04
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 425870b4 received 425870b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 56edf733 received 56edf732
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5d8c3cf1 received 5d8c3cf0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05cac87c received 05cac87c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 399e0d4d received 399e0d4c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 19091de4 received 19091de4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 64e82243 received 64e82242
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2ee93a2d received 2ee93a2c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0adc6323 received 0adc6322
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 64f4dc12 received 64f4dc12
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 61de52af received 61de52ae
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3b0255d8 received 3b0255d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 63a88def received 63a88dee
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 47925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 11198c1e received 11198c1e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 47965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1ed796eb received 1ed796ea
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7ca8e590 received 7ca8e590
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 487e8b9e received 487e8b9e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7ebd9e0f received 7ebd9e0e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7365dac7 received 7365dac6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6012a98b received 6012a98a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4c1b800a received 4c1b800a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6f97a148 received 6f97a148
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6beb8f77 received 6beb8f76
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6869ab98 received 6869ab98
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48365: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1ffa3236 received 1ffa3236
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5ac52194 received 5ac52194
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6fb1f6a5 received 6fb1f6a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 187cb2cb received 187cb2ca
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 70f1f673 received 70f1f672
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48625: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2ddce2a6 received 2ddce2a6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 55c21d07 received 55c21d06
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48705: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 101d3772 received 101d3772
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7386b872 received 7386b872
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6d9544c3 received 6d9544c2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 03630007 received 03630006
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4565d858 received 4565d858
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0451ad5b received 0451ad5a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4ae3f14e received 4ae3f14e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48905: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 40e62145 received 40e62144
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 426ae005 received 426ae004
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 48945: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2350f90a received 2350f90a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 48985: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 422b1cd1 received 422b1cd0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3c7372ae received 3c7372ae
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49145: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 46b5135e received 46b5135e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7d30dd47 received 7d30dd46
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 43e5d0f2 received 43e5d0f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49265: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 68b1d507 received 68b1d506
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 58ddbc22 received 58ddbc22
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 61aed304 received 61aed304
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 30f79e58 received 30f79e58
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 59c587b4 received 59c587b4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 49585: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7dea0fa3 received 7dea0fa2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49625: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 725ccfa6 received 725ccfa6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3ed94c6e received 3ed94c6e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49745: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5f422664 received 5f422664
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49785: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2015980e received 2015980e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1de61ec8 received 1de61ec8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49845: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2e562ab6 received 2e562ab6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 49925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 48f0acf6 received 48f0acf6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 74fdb087 received 74fdb086
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6beb469f received 6beb469e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7ffa59f0 received 7ffa59f0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50105: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 75601c1f received 75601c1e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 23f88b03 received 23f88b02
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 340fc724 received 340fc724
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50225: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7cddab4a received 7cddab4a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5f240730 received 5f240730
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 35bf3e37 received 35bf3e36
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 10d85692 received 10d85692
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 270bbcde received 270bbcde
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 156aa19f received 156aa19e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 312027a3 received 312027a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 25f19d49 received 25f19d48
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ca90507 received 0ca90506
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6943e79f received 6943e79e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 688aa0e8 received 688aa0e8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 79b918a3 received 79b918a2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50665: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2131c4d5 received 2131c4d4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 719825e0 received 719825e0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 09f743cf received 09f743ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4c3a8d56 received 4c3a8d56
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 01f226a5 received 01f226a4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5bc865f9 received 5bc865f8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50825: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 55c35877 received 55c35876
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 50845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 23321fef received 23321fee
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 50985: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d383a2a received 6d383a2a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 762bd61c received 762bd61c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51065: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 24ee5494 received 24ee5494
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0b296b49 received 0b296b48
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51105: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3e41347e received 3e41347e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0dc32991 received 0dc32990
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51245: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 599cd4f3 received 599cd4f2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 171f061b received 171f061a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 14187dbd received 14187dbc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51385: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 169db5a6 received 169db5a6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 63471821 received 63471820
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 54517ad2 received 54517ad2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 261605fb received 261605fa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2d3f5b39 received 2d3f5b38
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 17569791 received 17569790
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6ff7f5a7 received 6ff7f5a6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0dae2926 received 0dae2926
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51565: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 39301d83 received 39301d82
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 24678ca6 received 24678ca6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 43473b89 received 43473b88
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51745: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c885020 received 6c885020
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51785: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 21dd2989 received 21dd2988
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49c7f85d received 49c7f85c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51865: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4aafa56a received 4aafa56a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 51885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 43dae421 received 43dae420
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51925: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1bf99362 received 1bf99362
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 51965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7a358a98 received 7a358a98
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 66e51de8 received 66e51de8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52025: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6c9f7b1f received 6c9f7b1e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bb07d0b received 4bb07d0a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 55d934ff received 55d934fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 79076bbd received 79076bbc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52145: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1f2fbec1 received 1f2fbec0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52225: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 16cf1e52 received 16cf1e52
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 30513e92 received 30513e92
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52265: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 104ef6fe received 104ef6fe
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52305: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 39ce17fc received 39ce17fc
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 40d29815 received 40d29814
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52345: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7bfd2880 received 7bfd2880
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 48366a3c received 48366a3c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 54cec410 received 54cec410
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 06395759 received 06395758
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7d1b588d received 7d1b588c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5b7342d3 received 5b7342d2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52605: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 749ba30f received 749ba30e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b623b76 received 4b623b76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5d03ee77 received 5d03ee76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52725: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 76d98b9d received 76d98b9c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52745: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5055cb12 received 5055cb12
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0f5fdf86 received 0f5fdf86
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 52785: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 40499bb6 received 40499bb6
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52885: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6095b51f received 6095b51e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 52965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 565ec20d received 565ec20c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 378ac786 received 378ac786
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6659fb19 received 6659fb18
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49aea021 received 49aea020
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53185: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 47289909 received 47289908
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53225: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2a9a4152 received 2a9a4152
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4bf88c4f received 4bf88c4e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4b1f34c5 received 4b1f34c4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53385: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6d92e6a2 received 6d92e6a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53405: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 2591211a received 2591211a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53445: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 01abe32e received 01abe32e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4883b292 received 4883b292
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 231a51d8 received 231a51d8
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53625: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4e7322e9 received 4e7322e8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53645: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 23047fcc received 23047fcc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 627ba294 received 627ba294
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 247c0eb4 received 247c0eb4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 074e3b0d received 074e3b0c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 361e487e received 361e487e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53745: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 025fe988 received 025fe988
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 53945: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7f6c72f1 received 7f6c72f0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53965: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 52257b2a received 52257b2a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 53985: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 398eae76 received 398eae76
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54005: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2b9d6fe9 received 2b9d6fe8
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54025: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7d476d1e received 7d476d1e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 279dfc08 received 279dfc08
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54085: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 31efe382 received 31efe382
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54105: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 33234aba received 33234aba
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54205: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 703ca966 received 703ca966
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54285: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 33e012dc received 33e012dc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54345: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4a7c4266 received 4a7c4266
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 35b5346b received 35b5346a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 77e48139 received 77e48138
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4418cb4a received 4418cb4a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ff2fb2b received 0ff2fb2a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54485: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6e245086 received 6e245086
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54545: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4ad0b8c1 received 4ad0b8c0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6c7d1a0a received 6c7d1a0a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54685: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3f233ee2 received 3f233ee2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54705: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 19e10005 received 19e10004
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54745: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 451c9178 received 451c9178
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54765: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 52c4962f received 52c4962e
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54785: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 05a51b78 received 05a51b78
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54825: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 398c895e received 398c895e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54845: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2ab99377 received 2ab99376
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2a299c93 received 2a299c92
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 54905: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1b8eb58a received 1b8eb58a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 54925: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 237d3ca5 received 237d3ca4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0108adfc received 0108adfc
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55045: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 23549fd6 received 23549fd6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55065: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 25f54058 received 25f54058
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55105: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 5754dc62 received 5754dc62
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55125: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0253c579 received 0253c578
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55145: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 66179a41 received 66179a40
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 293c3871 received 293c3870
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 77975413 received 77975412
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3adcdcd2 received 3adcdcd2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55265: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 636dfb62 received 636dfb62
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 49468241 received 49468240
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55325: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 613dfdff received 613dfdfe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5d136565 received 5d136564
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55385: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4b70cbc4 received 4b70cbc4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 470ebb73 received 470ebb72
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55425: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7c5c558c received 7c5c558c
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55485: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 5a134db1 received 5a134db0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2df31667 received 2df31666
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55545: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 4d2aff3e received 4d2aff3e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55645: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 157e96a3 received 157e96a2
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 51705d7a received 51705d7a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 55765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 6283d298 received 6283d298
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55805: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 53671c4b received 53671c4a
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55865: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 346842d1 received 346842d0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 55965: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 409fb999 received 409fb998
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56065: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 364b2714 received 364b2714
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56085: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 15ef5d71 received 15ef5d70
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 54134fc4 received 54134fc4
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56145: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 632315ee received 632315ee
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56165: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 08c38d67 received 08c38d66
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56225: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1305a183 received 1305a182
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56245: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3141fffa received 3141fffa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56285: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 3d950f4b received 3d950f4a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56305: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7db271b0 received 7db271b0
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56325: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1619fb24 received 1619fb24
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56345: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6ebc56d5 received 6ebc56d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56385: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7069387f received 7069387e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 76cea3c1 received 76cea3c0
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56465: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7b038a95 received 7b038a94
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56505: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 7fb37c0b received 7fb37c0a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56525: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 752d79ce received 752d79ce
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56565: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 60f9e29a received 60f9e29a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56605: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 7e18db5c received 7e18db5c
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56665: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 73512346 received 73512346
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56685: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1bea09e7 received 1bea09e6
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56705: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 0cbc9890 received 0cbc9890
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56725: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 200fad94 received 200fad94
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56765: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 74be7d70 received 74be7d70
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 56885: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1f8958fe received 1f8958fe
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 56945: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 50c6304b received 50c6304a
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 57005: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 662af376 received 662af376
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57065: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 0ac67c21 received 0ac67c20
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 57125: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 1ffa2828 received 1ffa2828
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(53) @ 57165: uvm_test_top.tb_h.fifo_scbd_h [DATA Matched] expected 3acba39e received 3acba39e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57205: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 2e21c7ab received 2e21c7aa
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57305: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 07bda1d5 received 07bda1d4
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57365: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 4ca0b6e3 received 4ca0b6e2
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57405: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 6f2b8a6f received 6f2b8a6e
+UVM_ERROR fifo_vip/verif/sequences/./../top/fifo_sb.sv(48) @ 57445: uvm_test_top.tb_h.fifo_scbd_h [DATA Mismatch] expected 1a03d731 received 1a03d730
+UVM_INFO /apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_objection.svh(1268) @ 77450: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(65) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(66) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_IN     ] Num. of Transactions input to the DUT     933
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(67) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_OUT    ] Num. of Transactions output from the DUT  929
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(68) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    TXN_STATUS ]                    
+ 																 Txn compared 929 
+ 																 Txn Passed   455 
+ 																 Txn Failed    474 
+  																 Txn Dropped   0 
+
+UVM_INFO fifo_vip/verif/sequences/./../top/fifo_sb.sv(69) @ 77450: uvm_test_top.tb_h.fifo_scbd_h [    $$$$$$     ] ############################################################### 
+
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  465
+UVM_WARNING :    0
+UVM_ERROR :  474
+UVM_FATAL :    0
+** Report counts by id
+[    $$$$$$     ]     2
+[    TXN_IN     ]     1
+[    TXN_OUT    ]     1
+[    TXN_STATUS ]     1
+[DATA Matched]   455
+[DATA Mismatch]   474
+[DRIVER]     1
+[RNTST]     1
+[TEST_DONE]     1
+[TIMOUTSET]     1
+[UVMTOP]     1
+$finish called from file "/apps/synopsys/I-2014.03-2/etc/uvm-1.1/base/uvm_root.svh", line 438.
+$finish at simulation time                77450
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 77450 ns
+CPU Time:      0.680 seconds;       Data structure size:   0.2Mb
+Sat Dec 10 00:13:50 2016

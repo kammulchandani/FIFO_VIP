@@ -1,0 +1,345 @@
+#!/usr/bin/csh
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_9_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_9_7.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_9_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+9_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_9_275.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_32_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_32_188.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_32_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+32_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_32_275.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_167_7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_7
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_167_7.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_167_188.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_188
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_167_188.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9_167_275.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv +define+167_275
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10_167_275.log
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim0.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo1.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim1.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo2.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim2.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo3.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim3.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo4.sv ./fifo_vip/verif/top/fifo_top.sv
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim4.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo5.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim5.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo6.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim6.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo7.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim7.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo8.sv ./fifo_vip/verif/top/fifo_top.sv
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim8.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo9.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim9.log
+
+set test_name = "$1"
+vcs -sverilog -ntb_opts uvm-1.1 -timescale=1ns/1ns +ntb_random_seed=value  +incdir+fifo_vip/verif/sequences +incdir+fifo_vip/verif/test +incdir+fifo_vip/verif/top +incdir+fifo_vip/verif/fifo_uvc ./rtl/fifo10.sv ./fifo_vip/verif/top/fifo_top.sv 
+./simv +UVM_TIMEOUT=5000000 -l ./logs/fifo_sim10.log
